@@ -5,7 +5,7 @@ set :deploy_to, '/var/www/html/prod'
 set :branch, :"master"
 
 # add user deployer
-role :app, %w{root@67.205.191.113:22}
+role :app, %w{ec2-user@ec2-18-191-211-175.us-east-2.compute.amazonaws.com}
 
 namespace :deploy do
   after :updated, :updated do
