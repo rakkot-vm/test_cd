@@ -5,7 +5,7 @@ set :deploy_to, '/var/www/html'
 set :branch, :"dev"
 
 # add user deployer
-role :app, %w{root@lbid.getcider.com:20099}
+role :app, %w{ec2-user@ec2-18-191-211-175.us-east-2.compute.amazonaws.com}
 
 namespace :deploy do
   after :updated, :updated do

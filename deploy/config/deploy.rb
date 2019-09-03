@@ -6,10 +6,10 @@ set :application, 'resume'
 set :repo_url, 'https://github.com/rakkot-vm/test_cd'
 
 # Set stage
-set :stages, %w(production, dev)
+set :stages, %w(master, dev)
 
 # Set default stage
-set :default_stage, "production"
+set :default_stage, "master"
 
 # Default value for :scm is :git
 set :git
