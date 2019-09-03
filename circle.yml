@@ -58,11 +58,11 @@ jobs: # a collection of steps
               if [ "${CIRCLE_BRANCH}" == "master" ]; then
                 cd deploy && cap test deploy
               fi
-#              if [ "${CIRCLE_BRANCH}" == "stage" ]; then
-#                cd deploy && cap stage deploy
-#              fi
-#              if [ "${CIRCLE_BRANCH}" == "dev" ]; then
-#                cd deploy && cap dev deploy
-#              fi
+              if [ "${CIRCLE_BRANCH}" == "stage" ]; then
+                cd deploy && cap stage deploy
+              fi
+              if [ "${CIRCLE_BRANCH}" == "dev" ]; then
+                cd deploy && cap dev deploy
+              fi
 
 
