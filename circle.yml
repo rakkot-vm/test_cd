@@ -47,11 +47,11 @@ jobs: # a collection of steps
       #- run: ./vendor/bin/codecept build
       #- run: ./vendor/bin/codecept run
       # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
-#      - add_ssh_keys:
-#            fingerprints:
-#                # for ssh to masutaka.net
-#                # See https://circleci.com/gh/masutaka/masutaka.net/edit#ssh
-#                - "77:38:a5:e0:78:ac:78:a9:46:98:b3:76:cd:b8:6e:73"
+      - add_ssh_keys:
+            fingerprints:
+                # for ssh to masutaka.net
+                # See https://circleci.com/gh/masutaka/masutaka.net/edit#ssh
+                - "02:53:69:e5:90:ea:b3:60:98:5b:03:a4:cc:86:95:85"
       - deploy:
             name: Deploy
             command: |
