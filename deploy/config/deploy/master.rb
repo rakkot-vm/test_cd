@@ -7,7 +7,7 @@ set :branch, :"master"
 
 # add user deployer
 #role :app, %w{ubuntu@ec2-3-15-224-63.us-east-2.compute.amazonaws.com}
-role :app, %w{root@kvmde58-9715.fornex.org}
+role :app, %w{root@test-cd.urich.work}
 
 namespace :deploy do
   after :updated, :updated do
