@@ -19,7 +19,7 @@ namespace :deploy do
        execute "cd #{release_path} && php artisan storage:link"
        execute "cd #{release_path} && php artisan cache:clear"
        execute "cd #{release_path} && php artisan view:clear"
-       execute "service supervisor restart all"
+       execute "sudo service supervisor restart all"
        execute "cd #{release_path} && php artisan queue:restart"
     end
   end
