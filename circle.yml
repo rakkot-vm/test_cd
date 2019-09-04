@@ -19,7 +19,7 @@ jobs: # a collection of steps
       - add_ssh_keys:
             fingerprints:
 #                - "02:53:69:e5:90:ea:b3:60:98:5b:03:a4:cc:86:95:85"
-                - "11:3f:14:1b:fd:e8:a9:16:81:43:a9:78:df:8c:ef:a6"
+                - "63:21:4d:ef:c3:94:3e:ab:02:83:01:48:dc:ab:f1:0f"
       - deploy:
             name: Deploy
             command: |
