@@ -6,7 +6,8 @@ set :deploy_to, '/var/www/vetalya/data/www/test-cd.urich.work/prod'
 set :branch, :"master"
 
 # add user deployer
-role :app, %w{ubuntu@ec2-3-15-224-63.us-east-2.compute.amazonaws.com}
+#role :app, %w{ubuntu@ec2-3-15-224-63.us-east-2.compute.amazonaws.com}
+role :app, %w{vetalya@kvmde58-9715.fornex.org}
 
 namespace :deploy do
   after :updated, :updated do
