@@ -1,5 +1,6 @@
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/var/www/html/prod'
+# set :deploy_to, '/var/www/html/prod'
+set :deploy_to, '/var/www/vetalya/data/www/test-cd.urich.work/prod'
 
 # Default branch is :master
 set :branch, :"master"
